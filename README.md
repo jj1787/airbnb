@@ -4,7 +4,7 @@ imagine how Airbnb data from http://insideairbnb.com/ could be used to answer a 
 My team and I wanted to take on the perspective of an Airbnb host and understand which listing attributes most strongly 
 contribute to high guest ratings.
 
-#### Part 1:
+#### Part 1
 We initially chose Hawaii, because one member suggested the seasonality may be interesting to examine. At this point in class, we had only learned how to do univariate, multivariate analysis (linear, logistic regression)
 
 Using Python, I ran the descriptions of Hawaii Airbnb listings through the IBM Watson Natural Language Understanding API to get a sentiment score of each description. For some of the listings that didn't have a description, I analyzed the "neighborhood" information instead. I cleaned up the data significantly in the original .csv file of the listings (inserting commas and quotation marks, removing foreign languages, replacing empty cells with placeholder phrase "N/A," etc.) but there were still many incomplete or inconsistent lines of data. For the listings with neither description nor neighborhood information, I set their sentiment scores to 10; the typical range from the API is -1 to 1.
